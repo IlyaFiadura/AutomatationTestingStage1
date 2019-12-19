@@ -24,7 +24,7 @@ public class Phone {
         telecomOperator.addClientToPhoneList(new Client("Кецко", "Федор", "Валерьевич", "Дзержинского", "4231_0000_5348_2300", 780, 19, 85, 0));
 
         System.out.println("\nСведения об абонентах, у которых время внутригородских разговоров превышает заданное (120 минут):");
-        List<Client> listByCityTime = telecomOperator.getListByCityTimeTreshold(120);
+        List<Client> listByCityTime = telecomOperator.getListByCityTimeThreshold(120);
         for (Client i : listByCityTime) {
             System.out.println(i);
         }

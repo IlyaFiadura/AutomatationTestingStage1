@@ -10,7 +10,7 @@ public class TelecomOperator {
         clientList.add(i);
     }
 
-    public List<Client> getListByCityTimeTreshold(int cityTimeThreshold) {
+    public List<Client> getListByCityTimeThreshold(int cityTimeThreshold) {
         List<Client> list = new ArrayList<>();
         for (Client i : clientList) {
             if (i.getInCityPhoneCallMinutes() > cityTimeThreshold) {
