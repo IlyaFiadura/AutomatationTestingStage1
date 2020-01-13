@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class OptionalTask6 {
     public static void main(String[] args) throws FileNotFoundException{
-        Scanner scan = new Scanner(new File("C:/AutomatationTestingStage1/AutomatationTestingStage1/JavaCollections/song.txt"));
+        Scanner scan = new Scanner(new File("/AutomatationTestingStage1/JavaCollections/song.txt"));
         ArrayList<String> songLyrics = new ArrayList<>();
 
         while (scan.hasNext()) {
@@ -14,7 +14,6 @@ public class OptionalTask6 {
         }
         scan.close();
         Collections.sort(songLyrics);
-
         for (String sortedLyrics : songLyrics) {
             System.out.println(sortedLyrics);
         }
